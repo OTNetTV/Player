@@ -6,11 +6,9 @@
 
 	}
 
-	error_log(print_r($_COOKIE, true));
-
 	$ch = curl_init();
 
-	curl_setopt($ch, CURLOPT_URL,"http://local.bitstreaminapi.com/v1/proxy/token");
+	curl_setopt($ch, CURLOPT_URL,"https://otnet.io/v1/proxy/token");
 	
 	curl_setopt($ch, CURLOPT_HTTPHEADER, array(
 		
