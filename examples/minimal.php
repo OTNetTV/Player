@@ -4,10 +4,10 @@
     
     <meta charset="utf-8">
     <title>OTNet.tv Demo</title>
-    <link href="node_modules/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link href="/dist/otnet.css" rel="stylesheet">
+    <link href="../dist/otnet.css" rel="stylesheet">
 
 </head>
 <body>
@@ -53,10 +53,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-    <script src="/dist/otnet.js"></script>
+    <script src="../dist/otnet.js"></script>
     <script>
 
-        var player = videojs('videojs-player',{
+        otnet('videojs-player');
+        /*var player = videojs('videojs-player',{
             html5: {
                 hls: {
                     overrideNative: true // NEW OVERIDE NATIVE::
@@ -73,7 +74,7 @@
 
             console.log('Ready...');
 
-        });
+        });*/
 
     </script>
 </body>
