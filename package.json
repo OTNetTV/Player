@@ -12,11 +12,11 @@
     "grunt-contrib-watch": "^1.1.0"
   },
   "dependencies": {
-    "video.js": "^7.6.1",
-    "videojs-contrib-ads": "^6.6.4",
+    "video.js": "^7.6.5",
+    "videojs-contrib-ads": "^6.6.5",
     "videojs-contrib-eme": "^3.5.4",
-    "videojs-flash": "^2.2.0",
-    "videojs-ima": "^1.6.0",
+    "videojs-flash": "^2.2.1",
+    "videojs-ima": "^1.7.2",
     "videojs-youtube": "^2.6.0"
   },
   "description": "OTT for creators, developers and businesses",

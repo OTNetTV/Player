@@ -6,21 +6,22 @@ module.exports = function(grunt) {
       options: {},
       dist1: {
         src: [
-          'node_modules/video.js/dist/ie8/videojs-ie8.js',
-          'node_modules/video.js/dist/video.js',
-          'node_modules/videojs-flash/dist/videojs-flash.js',
-          'node_modules/videojs-contrib-eme/dist/videojs-contrib-eme.js',
-          'node_modules/videojs-contrib-ads/dist/videojs.ads.js',
-          'src/**/*.js'
+            'node_modules/video.js/dist/video.js',
+            'node_modules/videojs-flash/dist/videojs-flash.js',
+            'node_modules/videojs-contrib-eme/dist/videojs-contrib-eme.js',
+            'node_modules/videojs-contrib-ads/dist/videojs.ads.js',
+            'node_modules/videojs-youtube/dist/Youtube.js', 
+            'node_modules/videojs-ima/dist/videojs.ima.js',
+            'src/**/*.js'
         ],
         dest: 'dist/<%= pkg.name %>.js'
       },
       dist2: {
         src: [
-          'node_modules/video.js/dist/video-js.css',
-          'node_modules/videojs-contrib-ads/dist/videojs.ads.css',
-          'node_modules/videojs-ima/dist/videojs.ima.css',
-          'src/**/*.css'
+            'node_modules/video.js/dist/video-js.css',
+            'node_modules/videojs-contrib-ads/dist/videojs.ads.css',
+            'node_modules/videojs-ima/dist/videojs.ima.css',
+            'src/**/*.css'
         ],
         dest: 'dist/<%= pkg.name %>.css'
       }
