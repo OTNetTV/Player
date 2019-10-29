@@ -1,0 +1,29 @@
+{
+  "name": "OTNet.tv",
+  "version": "1.0.0",
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-connect": "^2.0.0",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-qunit": "^3.1.0",
+    "grunt-contrib-uglify": "^4.0.1",
+    "grunt-contrib-watch": "^1.1.0"
+  },
+  "dependencies": {
+    "video.js": "^7.6.1",
+    "videojs-contrib-ads": "^6.6.4",
+    "videojs-contrib-eme": "^3.5.4",
+    "videojs-flash": "^2.2.0",
+    "videojs-ima": "^1.6.0",
+    "videojs-youtube": "^2.6.0"
+  },
+  "description": "OTT for creators, developers and businesses",
+  "main": "gruntfile.js",
+  "scripts": {
+    "start": "grunt"
+  },
+  "author": "",
+  "license": "ISC"
+}
