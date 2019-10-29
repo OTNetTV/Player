@@ -1839,3 +1839,39 @@ video::-webkit-media-text-track-display {
   text-shadow: 0 0 1em #fff;
 }
 
+/* JUST SOME STYLE FOR THIS PLAYER ONLY REMOVE */
+.vjs-otnet .vjs-control-bar {
+    background-color: #2e3448;
+    font-size: 1em;
+    height: 4em;
+}
+
+.vjs-otnet .vjs-mouse-display .vjs-time-tooltip {
+    display: none !important;
+}
+
+.vjs-otnet .vjs-menu-button-popup .vjs-menu {
+    bottom: 1em !important;
+}
+
+.vjs-otnet .vjs-playback-rate .vjs-playback-rate-value {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.vjs-otnet .vjs-time-control { 
+    line-height: 4em;
+}
+
+.vjs-otnet .vjs-fa-icon {
+    font-size: 15px !important;
+}
+
+.vjs-otnet .vjs-button>.vjs-icon-placeholder:before {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

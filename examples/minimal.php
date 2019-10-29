@@ -32,12 +32,7 @@
 
             <div class="col-10">
                 
-                <video id="videojs-player" class="video-js  vjs-16-9 vjs-default-skin" controls muted poster="https://d3edqwp3msshbp.cloudfront.net/00000109.jpg">
-
-                    <source src="https://d3edqwp3msshbp.cloudfront.net/aladdin-web-optimised.mp4" type='video/mp4'>
-                    <track kind='captions' src='https://s3bubble-tests.s3.amazonaws.com/timed.vtt' srclang='en' label='English' />
-                    
-                </video>
+                <video id="videojs-player" class="video-js vjs-16-9 vjs-default-skin" controls muted></video>
 
             </div>
 
@@ -56,25 +51,14 @@
     <script src="../dist/otnet.js"></script>
     <script>
 
-        otnet('videojs-player');
-        /*var player = videojs('videojs-player',{
-            html5: {
-                hls: {
-                    overrideNative: true // NEW OVERIDE NATIVE::
-                } 
-            },
-            inactivityTimeout: 0,
-            playbackRates: [0.5, 1, 1.5, 2],      
-            controlBar: {
-                volumePanel: {
-                    inline: false
-                }
-            }
-        }, function(){
 
-            console.log('Ready...');
+        otnet('videojs-player').video({
+            code: 'psztbf' //'pswjmq'
+        }, function(player) {
 
-        });*/
+            //console.log('player',player);
+            
+        });
 
     </script>
 </body>
