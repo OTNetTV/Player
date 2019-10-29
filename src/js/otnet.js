@@ -55,7 +55,7 @@ function otnet(div) {
         
         });
         
-        var player = videojs(div,{
+        var player = videojs(div,{ 
             html5: {
                 hls: {
                     overrideNative: true // NEW OVERIDE NATIVE::
@@ -78,6 +78,8 @@ function otnet(div) {
 
             otnet.setTracks(data.content.tracks, this, 'chapters');
 
+            otnet.setBif(data.content.tracks, this, 'trickplay');
+
             //otnet.setAds(media, this);
 
         });
@@ -86,7 +88,6 @@ function otnet(div) {
 
         player.poster(otnet.getPoster(data.images, 'landscape'));
 
-        //data.content.media[0].type = data.content.media[0].mime_type;
         player.src(media);
 
     };
@@ -127,6 +128,37 @@ function otnet(div) {
                 player.addRemoteTextTrack(tracks[i]);
 
             }
+
+        }else{
+
+            console.info('No ' + kind);
+        }
+
+        return;
+
+    };
+
+    otnet.setBif = function(data, player, kind) {
+
+    	var tracks = data.filter(function (entry) { 
+                
+            return entry.kind === kind;
+        
+        });
+
+        if(tracks.length > 0){
+
+        	var bif = tracks.filter(function (entry) {
+                
+	            return entry.ref === 'player';
+	        
+	        });
+
+        	console.log('BIF',bif);
+
+        	player.bif({
+	            src: bif[0].src
+	        });
 
         }else{
 

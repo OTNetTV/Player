@@ -12,6 +12,7 @@ module.exports = function(grunt) {
             'node_modules/videojs-contrib-ads/dist/videojs.ads.js',
             'node_modules/videojs-youtube/dist/Youtube.js', 
             'node_modules/videojs-ima/dist/videojs.ima.js',
+            'thirdparty/videojs.bif.js',
             'src/**/*.js'
         ],
         dest: 'dist/<%= pkg.name %>.js'
